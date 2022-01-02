@@ -1,14 +1,7 @@
 node_modules/
 .expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
-
-# macOS
-.DS_Store
+.expo-shared/
+.env
+package-lock.json
+babel.config.js
+app.json
