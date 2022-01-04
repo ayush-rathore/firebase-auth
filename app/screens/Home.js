@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
 import { IconButton } from "../components";
 import Screen from "../components/Screen";
 import Firebase from "../config/Firebase";
 
-import User from "../context/User";
+import { UserContext } from "../context/UserContext";
 
 const auth = Firebase.auth();
 
 const Home = () => {
-	const { user } = User();
+	const { user } = useContext(UserContext);
 
 	const handleSignout = async () => {
 		try {
@@ -23,9 +23,10 @@ const Home = () => {
 	return (
 		<Screen>
 			<View styles={styles.container}>
-				<Text>Welcome, {user.email}</Text>
+				<Text>Welcome, {user.email}!</Text>
 				<IconButton name="logout" onPress={handleSignout} />
 			</View>
+			<Text>Your UserID: {user.uid}</Text>
 		</Screen>
 	);
 };
