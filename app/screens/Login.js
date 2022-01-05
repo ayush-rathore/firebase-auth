@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Button, InputField, ErrorMessage, Screen } from "../components";
 
-import Firebase from "../config/Firebase";
+import Firebase from "../config/firebase";
 
 const auth = Firebase.auth();
 

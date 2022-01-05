@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { ActivityIndicator, View } from "react-native";
 
 import Firebase from "../config/firebase";
-import { UserContext } from "../contexts/UserContext";
+import { UserContext } from "../context/UserContext";
 
 import AuthNav from "./AuthNav";
 import HomeNav from "./HomeNav";

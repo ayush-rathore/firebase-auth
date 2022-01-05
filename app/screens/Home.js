@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { IconButton } from "../components";
 import Screen from "../components/Screen";
-import Firebase from "../config/Firebase";
+import Firebase from "../config/firebase";
 
 import { UserContext } from "../context/UserContext";
 
