@@ -12,6 +12,8 @@ const firebaseConfig = {
 	appId: Constants.manifest.extra.appId,
 };
 
+console.log(firebaseConfig);
+
 let Firebase;
 
 if (firebase.apps.length === 0) {
